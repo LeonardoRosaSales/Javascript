@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varíavel</title>
+</head>
+
+<body>
+
+    <!-- 
+        "VAR , LET E CONST" - São tipos de varíaveis para determinar o seu uso
+        "BOOLEAN" - É um termo utilizado para ações VERDADEIROS OU FALSO
+        "${}"- É uma interpolação onde se aplica com a crase
+        "CONCATENAÇÃO" - É utilizado com as variaveis entre aspas
+    -->
+
+    <script>
+        var nome = prompt('Digite seu nome:');
+        var sobrenome = prompt('Digite seu sobrenome:');
+        // LET, CONST
+
+        alert(nome + " Muito prazer! Seu nome completo é " + nome +" "+ sobrenome);  //CONCATENAÇÃO
+
+        var numero = 418; //NUMBER (INT)
+        var endereco = 'Rua 01'; //STRING
+        var grau = 40.2; //NUMBER (FLOAT)
+        // BOOLEAN = TRUE OR FALSE
+
+        alert(`${nome} Muito prazer! Seu nome completo é ${nome} ${sobrenome}!`); //INTERPOLAÇÃO
+
+        // VARÍAVEIS
+        // - NÃO INICIEM COM NÚMEROS
+        // - LETRAS, _ OU $
+        // - NÃO USAMOS ESPAÇO NOS NOMES: var nome sobrenome
+        // != nomeSobrenome (CAMEL CASE)
+        // - PALAVRAS RESERVADAS
+        // - CARARCTERES ESPECIAIS = Ç ^ ´ ~ ! NÃO USA !
+
+    </script>
+</body>
+
+</html>

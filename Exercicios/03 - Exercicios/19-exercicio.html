@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 19</title>
+</head>
+<body>
+    
+    <script>
+        let nome = prompt('Digite seu nome: ');
+        let salario = parseFloat(prompt('Quantos é seu salário: ').replace(',','.'));
+        let ano = parseFloat(prompt('Quantos anos você está na empresa: '));
+        let mais = (salario * 20) / 100;
+        let meio = (salario * 12.5) / 100;
+        let menos = (salario * 3) / 100;
+        let velho = salario + mais;
+        let adole= salario + meio;
+        let novo = salario + menos;
+
+        if(ano >= 10){
+            document.write(`${nome} teve seu salário aumentado para ${velho.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}`);
+        }else if(ano >= 3){
+            document.write(`${nome} teve seu salário aumentado para ${adole.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}`);
+        }else{
+            document.write(`${nome} teve seu salário aumentado para ${novo.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}`);
+        };
+    </script>
+</body>
+</html>

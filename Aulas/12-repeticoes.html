@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repetições</title>
+</head>
+
+<body>
+
+    <!-- Repetições -->
+    <!-- 
+        "while"- Enquanto for verdadeiro ela vai continuar. Ele precisa do indice para repetir os dados
+        Ele usa para repetições como fosse repetir os dados.
+    -->
+
+    <!-- Tabuada -->
+    <script>
+        var num = parseFloat(prompt('Digite um número: '));
+
+        document.write(`${num} X 1 = ${num * 1}<br>`);
+        document.write(`${num} X 2 = ${num * 2}<br>`);
+        document.write(`${num} X 3 = ${num * 3}<br>`);
+        document.write(`${num} X 4 = ${num * 4}<br>`);
+        document.write(`${num} X 5 = ${num * 5}<br>`);
+
+        document.write('<hr>');
+
+        var ind = 1;
+
+        while (ind <= 10) {
+            document.write(`${num} X ${ind} = ${num * ind} <br>`);
+
+            ind = ind + 1 //ind++
+        }
+    </script>
+
+    <!-- Repetições de Palavras -->
+    <script>
+        var c = 1;
+
+        while (c < 6) {
+            document.write('Hoje tem Minecraft <br>');
+            c++;
+        }
+
+        document.write('Saiu do loop');
+    </script>
+
+    <!-- Ele repete com valor que você coloca aumenta -->
+    <script>
+        var valorInicial = parseFloat(prompt('Digite o nº inicial: '));
+        var valorFinal = parseFloat(prompt('Digite o nº final: '));
+
+        while (valorInicial <= valorFinal) {
+            document.write('Teste <br>');
+            valorInicial++;
+        }
+    </script>
+
+    <!-- Subtrair -->
+    <script>
+        var inc = 10;
+
+        while (inc >= 0) {
+            document.write(inc + '<br>');
+            inc--
+        }
+    </script>
+    
+    <!-- Adição -->
+    <script>
+        var i = 0;
+
+        while (i <= 10) {
+            document.write(i + '<br>');
+            i++
+        }
+    </script>
+
+    <!-- Ele pega os dados e muda as variaveis por causa que a variavel inicial é menor ex: "var=0 substitui para 2 e depois o 2 vira var=2" -->
+    <script>
+        var c = 1;
+        var soma = 0;
+        var maior = 0;
+
+        while(c <= 5){
+            var num = parseFloat(prompt(`Digite o ${c}º número: `));
+
+            if(num > maior){
+                maior = num;
+            }
+            soma = soma + num;
+            //soma+num
+            c++
+        }
+
+        document.write(`A soma de todos os valores foi: ${soma}<br>`);
+        document.write(`O maior número digitado foi ${maior}`);
+    </script>
+
+    <!-- Conta a quantidade que você quer ex:"2 em 2" ou "10 em 10" -->
+    <script>
+        var valor = parseFloat(prompt('Quer contar até quanto?'));
+        var salto = parseFloat(prompt('Qual será o valor do salto?'));
+        var c = 0;
+
+        while (c <= valor) {
+            document.write(c + '<br>');
+            //c+=salto;
+            c = c + salto;
+        }
+        document.write('Fim!')
+    </script>
+</body>
+
+</html>

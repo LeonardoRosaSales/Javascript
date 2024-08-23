@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 15</title>
+</head>
+<body>
+    
+    <script>
+        let nome = prompt('Digite seu nome: ');
+        let sex = parseFloat(prompt('Digite 1 se é Homem \nDigite 2 se é Mulher '));
+        let preco = parseFloat(prompt('Digite o preço do produto: '));
+        let homem = (preco * 5) / 100;
+        let mulher = (preco * 13) / 100;
+        let hom = preco - homem;
+        let mul = preco - mulher;
+
+        switch(sex){
+            case 1:
+                document.write(`${nome} seu produto vai ficar ${hom.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}`);
+                break
+            case 2:
+                document.write(`${nome} seu produto vai ficar ${mul.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}`);
+                break
+            default:
+                document.write('[ERROR] - Número Incorreto.');
+        };
+    </script>
+</body>
+</html>

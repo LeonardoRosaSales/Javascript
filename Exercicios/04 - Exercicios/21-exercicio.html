@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 21</title>
+</head>
+
+<body>
+
+    <script>
+        let carro = prompt('Digite o tipo do carro alugado (popular ou luxo): ');
+        let dia = parseFloat(prompt('Digite quantos dias de aluguel: '));
+        let km = parseFloat(prompt('Digite quantos KM foram percorridos: '));
+        let preco, km1, precoFinal;
+
+        if (carro === 'popular') {
+            preco = 90;
+            if (km <= 100) {
+                km1 = 0.20;
+            } else {
+                km1 = 0.10;
+            };
+        } else if (carro === 'luxo') {
+            preco = 150;
+            if (km <= 200) {
+                km1 = 0.30;
+            } else {
+                km1 = 0.25;
+            };
+        };
+        precoFinal = (preco * dia) + (km1 * km);
+        
+        document.write(`O preço a ser pago é ${precoFinal.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}`);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 20</title>
+</head>
+<body>
+    
+    <script>
+        let valor = parseFloat(prompt('Digite o valor da casa: ').replace(',','.'));
+        let salario = parseFloat(prompt('Digite o seu salário: ').replace(',','.'));
+        let ano = parseFloat(prompt('Digite quantos anos irá pagar: '));
+        let mensal = ano * 12;
+        let din = valor / mensal
+        
+
+        if(din > (salario * 0.3)){
+            document.write('Você não conseguiu o empretismo!');
+        }else{
+            document.write('Você conseguiu o emprestimo!');
+        };
+    </script>
+</body>
+</html>

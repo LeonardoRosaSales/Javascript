@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 18</title>
+</head>
+<body>
+    
+    <script>
+        let largura = parseFloat(prompt('Digite a LARGURA do terreno: '));
+        let comp = parseFloat(prompt('Digite o COMPRIMENTO do terreno'));
+        let area = largura * comp;
+
+        if(area >= 500){
+            document.write(`A área é ${area}m<sup>2</sup> do Terreno Vip.`);
+        }else if(area >= 100){
+            document.write(`A área é ${area}m<sup>2</sup> do Terreno Master`);
+        }else{
+            document.write(`A área é ${area}m<sup>2</sup> do Terreno Popular`)
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parâmetros</title>
+</head>
+<body>
+
+    <h1>Calculando Área</h1>
+
+    <input type="number" id="width" placeholder="Largura">
+    <input type="number" id="height" placeholder="Altura">
+    <!-- <input type="button" value="Mostrar área" onclick="mostrarArea(10, 20)"> -->
+    <input type="button" value="Mostrar área" onclick="mostrarArea(document.querySelector('#width').value, document.querySelector('#height').value)">
+
+    <div class="res"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

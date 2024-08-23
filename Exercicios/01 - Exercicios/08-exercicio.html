@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 08</title>
+</head>
+
+<body>
+
+    <script>
+        let n1 = parseFloat(prompt('Digite o dinheiro: ').replace(',','.'));
+        let n2 = n1 * 0.20;
+
+        alert(`Você tem na sua carteira ${n1.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}`);
+        alert(`Você pode comprar ${n2.toLocaleString('us', {style: 'currency', currency: 'USD'})}`);
+    </script>
+</body>
+
+</html>

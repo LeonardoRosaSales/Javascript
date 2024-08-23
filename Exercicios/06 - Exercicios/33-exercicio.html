@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 33</title>
+</head>
+<body>
+    
+    <script>
+       let n1 = parseFloat(prompt('Digite Nota 1: ').replace(',','.'));
+       let n2 = parseFloat(prompt('Digite Nota 2: ').replace(',','.'));
+
+       if(n1 > n2){
+        document.write(`A nota ${n1} é maior que ${n2}.`);
+       }else if(n1 < n2){
+        document.write(`A nota ${n1} é menor que ${n2}.`);
+       }else{
+        document.write(`A nota ${n1} é igual que ${n2}.`);
+       }
+    </script>
+</body>
+</html>

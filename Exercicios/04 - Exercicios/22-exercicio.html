@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 22</title>
+</head>
+
+<body>
+
+    <script>
+        let salarioAtual = parseFloat(prompt('Digite seu Salário Atual: ').replace(',','.'));
+        let sexo = prompt('Coloca seu gênero (Homem ou Mulher): ');
+        let anos = parseInt(prompt('Digite quantos anos tem na empresa: '));
+        let preco;
+
+        if(sexo === 'Mulher'){
+            if(anos < 15){
+                preco = salarioAtual * 0.05;
+            }else if(anos >= 15 && anos <= 20){
+                preco = salarioAtual * 0.12;
+            }else{
+                preco = salarioAtual * 0.23;
+            };
+        }else if(sexo === 'Homem'){
+            if(anos < 20){
+                preco = salarioAtual * 0.03;
+            }else if(anos >= 20 && anos <= 30){
+                preco = salarioAtual * 0.13;
+            }else{
+                preco = salarioAtual * 0.25
+            };
+        };
+        document.write(`O novo salário do funcionário(a) é: ${(salarioAtual + preco).toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}`);
+    </script>
+
+</body>
+
+</html>

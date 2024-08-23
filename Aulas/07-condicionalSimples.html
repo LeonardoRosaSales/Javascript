@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicional Simples</title>
+</head>
+
+<body>
+
+    <h1>Condição Simples</h1>
+
+    <!-- USANDO "IF" NA PARTE DE VELOCIDADE SE FOR MAIOR É 'MULTA' -->
+    <script>
+        var vel = 60;
+
+        // "DOCUMENT.WRITE" É O BODY DO JAVASCRIPT
+        document.write(`A velocidade do seu carro é ${vel}Km/h <br> `);
+
+        // "SE" A CONDIÇÃO FOR MAIOR OU IGUAL VAI APARECER O DADOS 
+        if (vel >= 60) {
+            document.write(`Você foi multado! Sua velocidade é ${vel}Km/h <br> `);
+        };
+
+        document.write('Dirija com segurança!');
+    </script>
+    <hr>
+
+    <!-- USANDO PARA MOSTRAR A IDADE TENDO DETERMINADO PARA MAIORIDADE -->
+    <script>
+        var nome = prompt('Digite seu nome: ');
+        var anoNasc = parseInt(prompt('Digite seu ano de nascimento: '));
+        var anoAtual = parseInt(prompt('Digite o ano atual: '));
+
+        var idade = anoAtual - anoNasc;
+
+        document.write(`Olá ${nome}, em ${anoAtual} você terá ${idade} anos. <br>`);
+
+        if (idade >= 18) {
+            document.write("E atingiu a maioridade.");
+        };
+    </script>
+</body>
+
+</html>

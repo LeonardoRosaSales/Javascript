@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 12</title>
+</head>
+<body>
+    
+    <script>
+        let vel = parseFloat(prompt('Digite a Velocidade do seu carro: '));
+        let multa = (vel * 5) % 80;
+
+        if(vel >= 80){
+            document.write(`Você está multado!! Sua multa é ${multa.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}`);
+        }else{
+            document.write(`Boa viagem!! Cuidado com os buracos!`);
+        }
+    </script>
+</body>
+</html>

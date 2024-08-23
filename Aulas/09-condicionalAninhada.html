@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicional Aninhada</title>
+</head>
+
+<body>
+
+    <!-- 
+        Nesse caso o uso "ELSE IF": 
+        Se condição foi verdadeira usa "IF";
+        Senão foi verdadeira, mas se for entre as condições usa "ELSE IF";
+        Senão foi verdadeira usa "ELSE". 
+    -->
+    <script>
+        // var n1 = parseFloat(prompt('Digite nota 1: '));
+        // var n2 = parseFloat(prompt('Digite nota 2: '));
+
+        // var media = parseInt((n1 + n2) / 2);
+
+        // if(media >= 7){
+        //     alert('Você foi APROVADO!');
+        // }else if(media >= 5 && media <7){
+        //     alert('Você está de RECUPERAÇÃO!');
+        // }else{
+        //     alert('Você está REPROVADO!');
+        // };
+    </script>
+
+    <script>
+        var dados = parseInt(prompt('Faça uma doação\nPara doar R$10,00 digite 1 \nPara doar R$ 20,00 digite 2 \nPara doar R$ 30,00 digite 3 \nPara doar R$ 50,00 digite 4 '));
+
+        if (dados === 1) {
+            alert('Obrigado, você doou R$ 10,00');
+        } else if (dados === 2) {
+            alert('Obrigado, você doou R$ 20,00');
+        } else if (dados === 3) {
+            alert('Obrigado, você doou R$ 30,00');
+        } else if (dados === 4) {
+            alert('Obrigado, você doou R$ 50,00');
+        } else {
+            alert('[ERRO] - Número incorreto');
+        }
+    </script>
+</body>
+
+</html>

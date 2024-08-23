@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Pratico</title>
+</head>
+
+<body>
+
+    <h1>Escalação do Time</h1>
+    <hr>
+    <h2>Escalar jogador</h2>
+
+    <p>
+        <label for="position"> Posição:
+            <select id="position">
+                <option value="Atacante ">Atacante</option>
+                <option value="Meia">Meia</option>
+                <option value="Zagueiro">Zagueiro</option>
+                <option value="Goleiro">Goleiro</option>
+            </select>
+        </label>
+        <label for="name"> Nome:
+            <input type="text" id="name">
+        </label>
+        <label for="number"> Número:
+            <input type="number" id="number">
+        </label>
+
+        <input type="button" value="Escalar" onclick="addPlayer()">
+    </p>
+
+    <h2>Remover jogador</h2>
+    <p>
+        <label for="numberToRemove"> Número:
+            <input type="number" id="numberToRemove">
+        </label>
+        <input type="button" value="Remover" onclick="removePlayer()">
+    </p>
+
+    <h2>Time: </h2>
+    <ul id="team-list"></ul>
+
+    <script src="script2.js"></script>
+</body>
+
+</html>

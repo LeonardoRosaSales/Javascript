@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 11</title>
+</head>
+
+<body>
+
+    <script>
+        let anoAtual = parseFloat(prompt('Digite o Ano Atual: '));
+        let anoNasc = parseFloat(prompt('Digite o Ano de Nascimento: '));
+        let media = anoAtual - anoNasc;
+
+        if(media >= 18){
+            document.write(`Com ${media} anos você está APTA para dirigir.`);
+        }else{
+            document.write(`Com ${media} anos você está INAPTA para dirigir.`);
+        }
+    </script>
+</body>
+
+</html>

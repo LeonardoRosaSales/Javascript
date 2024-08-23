@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Projeto Prático</title>
+</head>
+
+<body>
+    <header>
+        <h1>Verificador de Idade para VOTOÇÃO</h1>
+    </header>
+
+    <section>
+        <div>
+            <p>Ano de Nascimento
+                <input type="number" id="txtAno" min="0">
+            </p>
+            <p>Gênero
+                <input type="radio" name="radGen" id="masc">
+                <label for="">Masculino</label>
+                <input type="radio" name="radGen" id="fem">
+                <label for="">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verify()">
+            </p>
+        </div>
+        <div id="res">
+            Preencha os dados acima.
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Senac 2024</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

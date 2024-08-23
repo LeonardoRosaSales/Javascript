@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatações</title>
+</head>
+<body>
+    <!-- Formatações de Textos -->
+    <!--
+        ".toUpperCase"- é o atributo que coloca as letras MAÍUSCULO.
+        ".toLowerCase"- é o atributo que coloca as letras MINÚSCULO.
+        ".length"- é o atributo que conta quantas as letras tem na palavra.
+    -->
+    <script>
+        // var nome = prompt('Digite seu nome: ');
+        
+        // document.write(`Seu nome em MAÍUSCULO é ${nome.toUpperCase()}<br>`);
+        // document.write(`Seu nome MINÚSCULO é ${nome.toLowerCase()}<br>`);
+        // document.write(`Seu nome possui ${nome.length} letras.<br>`);
+    </script>
+
+    <!-- Formatações de Números -->
+    <!-- 
+        ".toFixed"- determina a qunatidade de números de uma operação
+        ".replace"- é um metodo string faz a substituição. Só usado para entrada.
+        ".toLocaleString"- modifica as exbição de dados
+        "minimumFractionDigits"- determina a qunatidade de números de uma operação. Substituição de "," e "."
+    -->
+    <script>
+        var value1 = parseFloat(prompt('Digite um número: ').replace(',','.'));
+        var value2 = parseFloat(prompt('Digite outro número: ').replace(',','.'));
+        var result = value1 + value2;
+
+        document.write(`O resultado é ${result} <br>`);
+        document.write(`O resultado é ${result.toFixed(2)} <br>`);
+        document.write(`O resultado é ${result.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}<br>`);
+        document.write(`O resultado é R$ ${result.toFixed(2).replace('.',',')}<br>`);
+        document.write(`O resultado é R$ ${result.toLocaleString('pt-br', {minimumFractionDigits: 2})}<br>`)
+        document.write(`O resultado é ${result.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}`)
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicional Composta</title>
+</head>
+
+<body>
+
+    <!-- USANDO O IF E O ELSE PARA DETERMINAR O PAIS SE É BRASILEIRO OU ESTRANGEIRO -->
+    <script>
+        var pais = 'Brasil';
+        var pais = prompt('Digite seu País').toUpperCase(); //DEIXA TUDO MAIUSCULO
+
+        // "IF - SE" / "ELSE - SE NÃO"
+        if(pais == 'BRASIL'){
+            document.write('Você é Brasileiro!');
+        }else{
+            document.write('Você é Estrangeiro!');
+        };
+    </script>
+    
+    <!-- USANDO PARA DETERMINAR SE É PAR OU IMPAR -->
+    <script>
+        
+        var n1 = parseFloat(prompt('Digite um número: '));
+
+        if(n1 % 2 == 0){
+            alert(`O número ${n1} é PAR!`);
+        }else{
+            alert(`O número ${n1} é IMPAR!`);
+        };
+    </script>
+
+    <!-- UTILIZANDO OPERADORES LOGICOS -->
+    <!-- USANDOS AS MEDIAS  COM APROVADO OU REPROVADO -->
+    <script>
+        var nota1 = parseFloat(prompt('Digite a 1ª nota:'));
+        var nota2 = parseFloat(prompt('Digite a 2ª nota:'));
+        var nota3 = parseFloat(prompt('Digite a 3ª nota:'));
+        var nota4 = parseFloat(prompt('Digite a 4ª nota:'));
+
+        var media = (nota1 + nota2 + nota3 + nota4) / 4;
+
+        // && - CONJUNÇÃO 
+        if(media >= 5 && media <= 10){
+            alert('Parabéns! Você foi APROVADO!');
+        }else{
+            alert('Você foi REPROVADO!');
+        };
+    </script>
+</body>
+
+</html>

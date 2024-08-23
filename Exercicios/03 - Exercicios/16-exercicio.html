@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 16</title>
+</head>
+<body>
+    
+    <script>
+        let nota1 = parseFloat(prompt('Digite a nota 1: '));
+        let nota2 = parseFloat(prompt('Digite a nota 2: '));
+        let media = (nota1 + nota2) / 2;
+
+        if(media >= 9){
+            document.write('Parabéns sua nota é A!');
+        }else if(media >=8){
+            document.write('Parabéns sua nota é B!');
+        }else if(media >= 7){
+            document.write('Parabéns sua nota é C!');
+        }else if(media >= 6){
+            document.write('Tem que estudar mais sua nota é D!');
+        }else if(media >= 5){
+            document.write('Tem que estudar mais sua nota é E!');
+        }else{
+            document.write('Tem que estudar mais sua nota é F!');
+        }
+    </script>
+</body>
+</html>

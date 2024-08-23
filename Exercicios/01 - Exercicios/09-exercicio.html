@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 09</title>
+</head>
+
+<body>
+
+    <script>
+        let n1 = parseFloat(prompt('Digite oo preço do produto: ').replace(',', '.'));
+        let n2 = (n1 * 5) / 100;
+        let n3 = n1 - n2;
+
+        alert(`O preço promocional com 5% de desconto e o preço ficou ${n3.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}`);
+    </script>
+</body>
+
+</html>

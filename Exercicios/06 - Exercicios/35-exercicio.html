@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 35</title>
+</head>
+
+<body>
+
+    <script>
+        var totalH18 = 0;
+        var totalM25 = 0;
+
+        do {
+            var sexo = prompt('Qual o sexo? [M/F]').toUpperCase();
+            var idade = parseInt(prompt('Qual a idade? '));
+            var cor = parseInt(prompt('Qual a cor do cabelo? \n[1] Preto \n[2] Castanho \n[3] Loiro \n[4] Ruivo'));
+
+            if (sexo === 'M' && idade > 18 && cor === 2) {
+                totalH18++;
+            } ;
+            if (sexo === 'F' && idade >= 25 && idade <= 30 && cor === 3) {
+                totalM25++;
+            };
+            var continuar = prompt('Quer continuar? [S/N]').toUpperCase();
+        } while (continuar === 'S');
+
+        document.write('Quantos homens mais de 18 tem cabelos castanhos é: ' + totalH18 + '<br>');
+        document.write('Quantas mulheres entre 25 e 30 são loiras é: ' + totalM25);
+    </script>
+</body>
+
+</html>

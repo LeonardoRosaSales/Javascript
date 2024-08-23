@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+
+<body>
+
+    <!-- 
+        O uso do "SWITCH" para tiver varias possibilidades usando só apenas números
+        "CASE" - para por a opção da elementos
+        "BREAK"- Utilizada para para o 'switch' a tela não ficar em loop
+        "DEFAULT" - É a função para finalizar o 'switch'
+    -->
+    <script>
+        var dados = parseInt(prompt('Faça uma doação\nPara doar R$10,00 digite 1 \nPara doar R$ 20,00 digite 2 \nPara doar R$ 30,00 digite 3 \nPara doar R$ 50,00 digite 4 '));
+
+        switch(dados){
+            case 1:
+                alert('Obrigado, você doou R$ 10,00');
+                break
+            case 2:
+                alert('Obrigado, você doou R$ 20,00');
+                break
+            case 3:
+                alert('Obrigado, você doou R$ 30,00');
+                break
+            case 4:
+                alert('Obrigado, você doou R$ 50,00');
+                break
+            default:
+                alert('[ERROR] - Número Incorreto');
+        }
+    </script>
+</body>
+
+</html>
