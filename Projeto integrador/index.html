@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Calculadora</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="container-tempo">
+            <p id="volume"></p>
+            <button class="gota" onclick="volume('Gota')">Gota</button>
+            <button class="microgota" onclick="volume('Micro')">Microgota</button>
+            <p id="valor"></p>
+            <button class="um" onclick="valor('1')">+1</button>
+            <button class="dez" onclick="valor('10')">+10</button>
+        </div>
+
+        <div class="container-tempo">
+            <p id="tempo"></p>
+            <button class="horas" onclick="tempo('Horas')">Horas</button>
+            <button class="min" onclick="tempo('Minutos')">Minutos</button>
+            <p id="valor2"></p>
+            <button class="umm" onclick="valor2('1')">+1</button>
+            <button class="dezz" onclick="valor2('10')">+10</button>
+        </div>
+
+        <input type="button" value="Calcular" onclick="calc()">
+        <div class="result"></div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
