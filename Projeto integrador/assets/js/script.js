@@ -1,13 +1,11 @@
 // Gotas / Microgotas
 function volume(num) {
     document.getElementById('volume').innerHTML = num;
-
 }
 
 // Horas / Minutos
 function tempo(num) {
     document.getElementById('tempo').innerHTML = num;
-
 }
 
 // Botão do Volume
