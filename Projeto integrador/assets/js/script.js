@@ -1,11 +1,13 @@
 // Gotas / Microgotas
 function volume(num) {
     document.getElementById('volume').innerHTML = num;
+
 }
 
 // Horas / Minutos
 function tempo(num) {
     document.getElementById('tempo').innerHTML = num;
+
 }
 
 // Botão do Volume
@@ -18,17 +20,17 @@ let number = 0;
 
 n1.addEventListener('click', () => {
     number += 1;
-    valor.textContent = number;
+    valor.innerHTML = number;
 })
 
 n2.addEventListener('click', () => {
     number += 10;
-    valor.textContent = number;
+    valor.innerHTML = number;
 })
 
 n3.addEventListener('click', () => {
     number += 100;
-    valor.textContent = number;
+    valor.innerHTML = number;
 })
 
 // Botão do Tempo
@@ -40,37 +42,55 @@ let number2 = 0;
 
 n4.addEventListener('click', () => {
     number2 += 1;
-    valor2.textContent = number2;
+    valor2.innerHTML = number2;
 })
 
 n5.addEventListener('click', () => {
     number2 += 10;
-    valor2.textContent = number2;
+    valor2.innerHTML = number2;
 })
 
-// Calcular
+//Calcular
 function calc() {
-    let volumeValue = number;
-    let tempoValue = number2;
+    let volumeValor = parseFloat(number);
+    let tempoValor = parseFloat(number2);
     let result = document.querySelector('.result');
-    let gota = document.querySelector('.gota');
-    let microgota = document.querySelector('.microgota');
-    let hora = document.querySelector('.horas');
-    let min = document.querySelector('.min');
+
+    let gotaValor = document.getElementById('volume').innerHTML;
+    let tempoValorTexto = document.getElementById('tempo').innerHTML;
 
     let resultado;
+    let unidade = '';
 
-    if (gota === 'Gota' && hora === 'Horas') {
-        resultado = volumeValue / (tempoValue * 3);
-    } else if (gota === 'Gota' && min === 'Minutos') {
-        resultado = (volumeValue * 20) / tempoValue;
+    if (gotaValor === 'Gota' && tempoValorTexto === 'Horas') {
+        resultado = volumeValor / (tempoValor * 3);
+        unidade = 'gotas/minuto.';
+    } else if (gotaValor === 'Gota' && tempoValorTexto === 'Minutos') {
+        resultado = (volumeValor * 20) / tempoValor;
+        unidade = 'gotas/minuto.';
+    } else if (gotaValor === 'Micro' && tempoValorTexto === 'Horas') {
+        resultado = volumeValor / tempoValor;
+        unidade = 'microgotas/minuto.'; 
+    } else if (gotaValor === 'Micro' && tempoValorTexto === 'Minutos') {
+        resultado = (volumeValor * 60) / tempoValor;
+        unidade = 'microgotas/minuto.'; 
+    } else {
+        resultado = 'Erro: selecione as opções corretamente';
     }
 
-    if (microgota === 'Micro' && hora === 'Horas') {
-        resultado = volumeValue / tempoValue;
-    } else if (microgota === 'Micro' && min === 'Minutos') {
-        resultado = (volumeValue * 60) / tempoValue;
-    }
+    result.innerHTML = `Resultado: ${resultado.toFixed(0)} ${unidade}`;
+}
 
-    result.textContent = `Resultado: ${resultado}`;
+// Excluir
+function excluir() {
+    number = 0;
+    number2 = 0;
+
+    document.querySelector('#valor').innerHTML = number;
+    document.querySelector('#valor2').innerHTML = number2;
+    document.getElementById('volume').innerHTML = '';
+    document.getElementById('tempo').innerHTML = '';
+
+    document.querySelector('.result').innerHTML = '';
+
 }
